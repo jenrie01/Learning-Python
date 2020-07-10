@@ -1,0 +1,387 @@
+# https://docs.python.org/3/
+
+#Python Basics
+  # Fundamental Data Types
+    #int
+    #float
+    #bool
+    #str
+    #list
+    #tuple
+    #set
+    #dict
+    #complex
+  # Classes -> Custom types
+  # Specialized Data Types
+  # None
+  #Integer and Floating Point
+    # print(type(2 + 4))
+    # print(type(2 - 4))
+    # print(type(2 * 4))
+    # print(type(2 / 4))
+    # print(type("asdasd"))
+    # print("\n")
+    # print(2 ** 4)
+    # print(2 // 4)
+    # print(2 % 4)
+  #Math Functions
+    # print(round(21.7))
+    # print(abs(-23))
+  #Python Mathematical Functions
+  #Operator Precedence
+    #print((20 - 3 + 2 ** 2))
+    #PEMDAS
+    # () - Parenthesis
+    # ** - Exponent
+    # */ - Multiplication &               Division
+    # +- - Addition &                     Subtraction
+    #PEMDAS
+  #Operatior Precedence Exercise
+    # Guess the output of each answer before you click RUN
+    # Try to write down your answer before and see how you do... keep it mind I made it a little tricky for you :)
+
+    # print((5 + 4) * 10 / 2)
+    # 45.0
+    # print(((5 + 4) * 10) / 2)
+    # 45.0
+    # print((5 + 4) * (10 / 2))
+    # 45.0
+    # print(5 + (4 * 10) / 2)
+    # 25.0
+    # print(5 + 4 * 10 // 2)
+    # 25
+  #Complex and Bin()
+    # print(bin(4))
+    # print(int('0b100', 2))
+  #Best Practices in Naming Variables
+    #https://www.w3schools.com/python/python_ref_keywords.asp
+    #snake_case - all lowercase and use underscore(_) instead of space
+    #Start with lowercase or underscore
+    #Letters, numbers, underscores
+    #Case sensitive
+    #Don't overwrite keywords
+    #CONSTANTS
+      #Use all UPPERCASE when naming a constant(number or value should never be changed) for example
+      # PI = 3.14
+    #__Dunder__
+      #Dunder/Double Underscores
+      #must be left alone
+      #must not touch
+  #Expression vs Statements
+    #user_age = iq / 5
+    #Expression is a piece of code that produces value in this case it is "iq / 5"
+    #Statement is the entire line of code that performs some sort of action like calculating and assigning variable in this case it is "user_age = iq / 5"
+  #Augmented Assignment Operator
+    #some_value = 5
+    #some_value = some_value - 2
+    #Using some_value -= 2 instead of some_value = some_value - 2
+  #String
+    #print(type("Hi, hello there!"))
+    #username = 'supercoder'
+    #password = 'supersecret'
+    #long_string = '''
+    #WOW
+    #0 0
+    #---
+    #'''
+    #print(long_string)
+    #first_name = 'Jenrie'
+    #last_name = 'Merano'
+    #full_name = first_name + ' ' + last_name
+    #print(full_name)
+  #String Concatenation
+    #print('hello' + ' Jenrie')
+  #Type Conversion
+    #Doing 
+    #print(type(int(str(100))))
+    #instead of
+    #a = str(100)
+    #b = int(a)
+    #c = type(b)
+    #print(c)
+  #Escape Sequence
+    #Adding \ or Backslash lets the python know whatever comes after this is a string
+      #weather = "\t It\'s \"kind of\"sunny \n hope you have a good day!"
+    #Use \t for adding a tab
+    #Use \n for adding a new line
+  #Formatted Strings
+    #also called f strings
+    #name = 'Johny'
+    #age = 55
+
+    #Using
+    #print(f'hi {name}. You are {age} years old')
+    #some still using this from python 2
+    #print('hi {}. You are {} years old'.format(name, age))
+    #or
+    #print('hi {0}. You are {1} years old'.format(name, age))
+    #if you want to change the value
+    #print('hi {new_name}. You are {age} years old'.format(new_name = 'sally', age = 100))
+    #instead of
+    #print('hi ' + name + '. You are' + str(age) + 'years old')
+  #String Indexes
+    #selfish = '01234567'
+             #  01234567
+
+    #[start:stop:stepover]
+    #print(selfish[7])
+    #7
+    #print(selfish[0:2]
+    #01
+    #print(selfish[0:7]
+    #0123456
+    #print(selfish[0:8]
+    #01234567
+    #print(selfish[0:8:2]
+    #0246
+    #print(selfish[::-1])
+    #76543210
+    #print(selfish[::-2])
+    #7531
+  #Immutability
+    #You can't reassign a part of a string. Once created it will exist only in that form. The only way you can change it is to create something new
+  #Built-In Functions + Methods
+    #https://docs.python.org/3/library/functions.html
+    #https://www.w3schools.com/python/python_ref_string.asp
+    #quote = 'to be or not to be'
+    #print(quote.upper())
+      #TO BE OR NOT TO BE
+    #print(quote.capitalize())
+      #To be or not to be
+  #Booleans
+    #True or False
+  #Exercise: Type Conversion
+    # birth_year = input('What year were you born?\n ')
+    # age = 2020 - int(birth_year)
+    # print(f"You are {age} years old. ")
+  #Exercise: Password Checker
+    # username = input('username: ')
+    # password = input('password: ')
+    # print('Hello {}, your password {dotted_password}  is {no}    letters long'.format(username, dotted_password = '*' * len(password), no = len(password)))
+
+    #username = input('what is your username?')
+    #password = input('what is your password?')
+
+    #password_length = len(password)
+    #hidden_password = '*' * password_length
+
+    #print(f'{username}, your password, {hidden_password}, is {password_length} letters long')
+  #Lists
+  #Data Structure
+  #List Slicing
+  #Matrix
+  #List Methods
+    #https://www.w3schools.com/python/python_ref_list.asp
+    #https://www.w3schools.com/python/python_ref_keywords.asp
+  #List Unpacking
+  #None
+  #Dictionaries
+  #Dictionary Keys
+  #Dictionary Methods
+    #https://www.w3schools.com/python/python_ref_dictionary.asp
+  #Tuples
+    #Immutable list
+    #Tuple Method
+      #count() and index()
+  #Sets
+    #Unordered collection of unique objects
+    #https://www.w3schools.com/python/python_ref_set.asp
+  #BONUS
+    #List uses []
+    #Dictionary uses {'keyword' : value}
+    #Tuple uses ()
+    #Set uses {}
+      #Methods works the same as venn diagram
+      #Use & instead of .intersection()
+      #Use | instead of .union()
+#Python Basics II
+  #Conditional Logic
+  #Indentation in Python
+  #Truthy and Falsy
+    #Tried doing login
+      # username = input('username: ')
+      # password = input('password: ')
+
+      # if username == 'jenrie' and password == '11111':
+      #   print(f'Hi {username} !')
+      # else:
+      #   print('Invalid username/password')
+  #Ternary Operator
+    #also called conditional expressions
+    #condition_if_true if condition else condition_if_false
+    #is_friend = False
+    #can_message = "message allowed" if is_friend else "not allowed to message"
+    #print(can_message)
+  #Short Circuiting
+    #or - If either one of the conditions are true, it will run the code 
+    #if it already meets the condition of the first one it will just ignore the second one if it sees the keyword "or"
+  #Logical Operator
+    #and, or, >, <, ==, >=, <=, !=, not
+      #"not" does the opposite
+  #Exercise: Logical Operator
+    # is_magician = True
+    # is_expert = False
+
+    # if is_magician and is_expert:
+    #   print('You are a master magician')
+    # elif is_magician and not is_expert:
+    #   print('At least you\'re getting there')
+    # elif not is_magician:
+    #   print('You need magic')
+  #is vs == 
+    #is actually checks the location in the memory where this value is stored if it is the  exact same thing 
+    #== checks only the equality of values
+  #For Loops
+  #Iterable
+    #can be list, dictionary, tuple, set, string. They are "iterable" because they can be iterated. Iterate means one by one check each item in the collection.
+
+    # user = {
+    #   'name': 'Golem',
+    #   'age': 5006,
+    #   'can_swim': False
+    # }
+
+    # for item in user.items():
+    #   print(item)
+    #if you wanna print separately / unpacking
+    # for item in user.items():
+    #   key, value = item;
+    #   print(key, value)
+    #or use for shorter way
+    # for key, value in user.items():
+    #   print(key, value)
+
+    # for item in user.values():
+    #   print(item)
+
+    # for item in user.keys():
+    #   print(item)
+  #Exercise: Tricky Counter
+    # my_list = [1,2,3,4,5,6,7,8,9,10]
+    # counter = 0
+    # for item in my_list:
+    #   counter += item
+    # print(counter)
+  #range()
+    #range(start, stop, step)
+    #for number in range(0,10):
+      #print('email email list')
+    #or
+    #for _ in range(0,10):
+      #print('email email list')
+
+    #for _ in range(2):
+      #print(list(range(10)))
+  #enumerate()
+    # for i, char in enumerate(list(range(100))):
+    #   if char == 50: 
+    #     print(f'index of 50 is: {i}')
+  #While Loops
+    #i = 0
+    #while i < 50:
+      #print(i)
+      #i += 1
+      #break 
+    #else:
+      #print('Done with all the work !')
+
+      #while True:
+        #response = input('say something: ')
+          #if (response == 'bye'):
+            #break
+  #break, continue, pass 
+  #Exercise: Find Duplicates
+    # some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+    # for item in some_list:
+    #   if some_list.count(item) > 1:
+    #     print(item)
+
+    # duplicates = []
+    # for value in some_list:
+    #   if some_list.count(value) > 1:
+    #     if value not in duplicates:
+    #       duplicates.append(value)
+
+    # print(duplicates)
+  #Functions
+  #Parameters and Arguments
+    #parameters
+    #def say_hello(name, emoji):
+      #print(f'helllloooo {name}{emoji}')
+
+    #arguments
+    #say_hello('Jenrie', '\U0001f600')
+
+    #print('😀')
+  #Default Parameters and Keyword Arguments
+    #Keyword Arguments
+      #say_hello(name='Bibi', emoji='😀')
+    #Positional Arguments
+      #say_hello('Ben', '😀')
+    #Default Parameters
+      #def say_hello(name='Alien', emoji='👽')
+  #return 
+    #def sum(num1, num2):
+      #return num1 + num2
+    
+    #should do one thing really well
+    #should return something
+
+    #total = sum(10,5)
+    #print(sum(10,total))
+    #or
+    #print(sum(10,sum(10,5)))
+
+    #def sum(num1, num2):
+      #def another_func(n1, n2):
+        #return n1 + n2
+      #return another_func(num1, num2)
+
+    #total = sum (10, 20)
+    #print(total)
+  #Methods vs Functions
+  #Docstrings
+    #allows us to comments inside of our function
+
+    # def test(a):
+    #   '''
+    #   Info: this function tests and prints param a
+    #   '''
+    #   print(a)
+
+    # test("!!!")
+    # help(test)
+    # print(test.__doc__)
+  #Clean Code 
+    #def is_even(num):
+      #return num % 2 == 0
+    #print(is_even(51))
+  #*args and **kwargs
+    # def super_func(*args, **kwargs):
+      #       total = 0
+      #       for items in kwargs.values():
+        #         total += items
+      #       return sum(args) + total
+
+    # print(super_func(1,2,3,4,5, num1=5, num2=10))
+
+    #Rule: params, *args, default parameters, **kwargs
+  #Exercise: Functions
+    # def highest_even(li):
+    #   evens = []
+    #   for items in li:
+    #     if items % 2 == 0:
+    #       evens.append(items)
+    #   return max(evens)
+          
+    # print(highest_even([10,2,3,4,8,11,24]))
+  #Scope
+    #means what variables do I have access to?
+    #RULES
+      #1 - Start with local
+      #2 - Parent local
+      #3 - Global
+      #4 - Built in python functions
+    #global 
+    #nonlocal    
